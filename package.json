@@ -43,6 +43,7 @@
   },
   "homepage": "https://github.com/dfcreative/emmy",
   "dependencies": {
+    "closest": "0.0.1",
     "icicle": ">=0.1.1",
     "is-browser": "^2.0.1",
     "is-function": "^1.0.1",

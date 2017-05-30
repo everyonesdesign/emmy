@@ -6,6 +6,7 @@ module.exports = delegate;
 
 var on = require('./on');
 var isFn = require('is-function');
+var closest = require('closest');
 
 
 /**
@@ -51,7 +52,7 @@ delegate.wrap = function (container, evt, fn, selector) {
 			}
 			//find at least one element in-between delegate target and event source
 			else {
-				delegateTarget = srcEl.closest && srcEl.closest(selector);
+				delegateTarget = closest(srcEl, selector);
 			}
 
 			if (delegateTarget && container !== delegateTarget && container.contains(delegateTarget)) {

@@ -30,10 +30,10 @@ off(target, 'evt');
 once(webWorker, 'message', function(){...});
 ```
 
-You might need to polyfill `Element.contains`, `Element.closest` and `Array.some` for old browsers:
+You might need to polyfill `Element.contains` and `Array.some` for old browsers:
 
 ```
-https://cdn.polyfill.io/v1/polyfill.js?features=default,Node.prototype.contains,Element.prototype.closest,Array.prototype.some,
+https://cdn.polyfill.io/v1/polyfill.js?features=default,Node.prototype.contains,Array.prototype.some,
 ```
 
 
